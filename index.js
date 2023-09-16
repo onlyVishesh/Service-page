@@ -200,7 +200,7 @@ document.querySelectorAll(".js-ambulance").forEach((ambulance) => {
                               ambulances.name
                           }/FEATURES ${
                         ambulances.features.indexOf(feature) + 1
-                    }.png" alt=""
+                    }.png" alt="${ambulances.name}"
                             class="selected-ambulance-feature-img">
                           <p class=".selected-ambulance-feature-p">${
                               feature[0]
@@ -248,10 +248,10 @@ document.querySelectorAll(".js-ambulance").forEach((ambulance) => {
         <!-- inner and outer images -->
         <div class="selected-ambulance-img">
           <figure class="selected-ambulance-outer-figure">
-            <img src="images/ambulance/${ambulances.name}.png" alt="" class="selected-ambulance-outer-img">
+            <img src="images/ambulance/${ambulances.name}.png" alt="${ambulances.name}" class="selected-ambulance-outer-img">
           </figure>
           <figure class="selected-ambulance-inner-figure">
-            <img src="images/ambulance/inner-${ambulances.name}.png" alt="" class="selected-ambulance-inner-img">
+            <img src="images/ambulance/inner-${ambulances.name}.png" alt="${ambulances.name} interior" class="selected-ambulance-inner-img">
           </figure>
         </div>
         <!-- ambulance detail paragraph -->
@@ -321,7 +321,7 @@ document.querySelectorAll(".js-ambulance").forEach((ambulance) => {
 let quotes = [
     `"Future holds transformative services and technologies that will reshape the world."`,
     `"At Ambuvians, healthcare is not just a service, but a promise of well-being."`,
-    `"Caring today for a healthier tomorrow, Ambuvians redefines healthcare."`,
+    `"Caring today for a healthier tomorrow, AMBUvians redefines healthcare."`,
 ];
 
 let quotesNo = 0;

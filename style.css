@@ -646,20 +646,21 @@ main {
     position: relative;
     /* overflow: hidden; */
     width: 100%;
-    height: 24vw;
+    height: 30vw;
 
     border: 0px solid #343cff;
     /* side bars effect */
     box-shadow: 7px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-.quote video {
+.quote .video {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 25vw;
     position: absolute;
     object-fit: cover;
+  overflow: hidden;
 }
 
 .text-box {
@@ -667,7 +668,7 @@ main {
     font-family: "Kaisei Decol", Calibri, serif;
 
     width: 100%;
-    height: 101%;
+
     padding: 2vw 0.5vw;
     top: 0;
     left: 0;
@@ -687,8 +688,12 @@ main {
     background: #000;
     mix-blend-mode: multiply; */
 }
+.abc{
+    width: 100%;
+}
 
 .customer-support-div {
+    margin-top: 2vh;
     background-image: url("./images/CUSTOMER SUPPORT BACKGROUND.png"); /* The image used */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */

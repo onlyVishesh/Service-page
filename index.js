@@ -196,15 +196,12 @@ document.querySelectorAll(".js-ambulance").forEach((ambulance) => {
                     <div class="flip-card selected-ambulance-features">
                       <div class="flip-card-inner">
                         <div class="flip-card-front">
-                          <img src="images/ambulance/features/${
-                              ambulances.name
-                          }/FEATURES ${
-                        ambulances.features.indexOf(feature) + 1
-                    }.png" alt=""
+                          <img src="images/ambulance/features/${ambulances.name
+                        }/FEATURES ${ambulances.features.indexOf(feature) + 1
+                        }.png" alt=""
                             class="selected-ambulance-feature-img">
-                          <p class=".selected-ambulance-feature-p">${
-                              feature[0]
-                          }</p>
+                          <p class=".selected-ambulance-feature-p">${feature[0]
+                        }</p>
     
                         </div>
                         <div class="flip-card-back">
@@ -320,7 +317,7 @@ document.querySelectorAll(".js-ambulance").forEach((ambulance) => {
 
 let quotes = [
     `"Future holds transformative services and technologies that will reshape the world."`,
-    `"At Ambuvians, healthcare is not just a service, but a promise of well-being."`,
+    `"At Ambuvians, the healthcare is not just a service, but a promise of well-being."`,
     `"Caring today for a healthier tomorrow, Ambuvians redefines healthcare."`,
 ];
 

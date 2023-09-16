@@ -46,21 +46,21 @@
 
       <!-- left side of header that contain Logo -->
       <div id="logo">
-        <a href="#"><img src="images/ambu logo.png" alt="AMBUvians logo" id="logo1"></a>
+        <a href="#"><img src="images/ambu logo.png" alt="ambuvians Logo" id="logo1"></a>
       </div>
 
       <!-- right side header that contain home, about, services and profile pic options -->
       <div class="right-header">
 
-        <div>
+        <div class="laptop-links">
           <ul class="links right-header-element">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
             <li><a href="#" style="padding: 5px;
-            background: linear-gradient(90deg, #0092ee 0%, #0c65ba 50%, #203381 100%);
-              background-repeat: no-repeat;
-              background-size: 50% 4px;
-              background-position: bottom;">SERVICES</a></li>
+              background: linear-gradient(90deg, #0092ee 0%, #0c65ba 50%, #203381 100%);
+                background-repeat: no-repeat;
+                background-size: 50% 4px;
+                background-position: bottom;">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
           </ul>
         </div>
 
@@ -370,10 +370,11 @@
 
     <!-- section 4 - contain quote -->
     <section class="quote box hidden">
-      <video autoplay muted loop>
-        <source src="videos/quote.mp4" type="video/mp4">
-      </video>
-      <div class="text-box">
+      <div class="video">
+        <img src="videos/video.gif" alt="QUotes" srcset="" class="abc">
+      </div>
+
+      <div class="text-box text-overlay">
         <h1 class="text-box-h">Future holds transformation services and technologies that
           will reshape the world.</h1>
       </div>
@@ -466,10 +467,11 @@
 
     <!-- heading in the footer -->
 
-    <h1 style="font-size: 4vw; margin: 0; align-items: center;">
-      <img src="images/indian-map.svg" alt="India map" style="width:4vw"> &nbsp; India's First Unified Health Care
-      Software
-    </h1>
+    <div style="font-size: 1.5vw; margin: 1vw; align-items: center;" class="footer-title">
+      <img src="images/indian-map.svg" alt="India map" style="width:4vw">
+      <h1>&nbsp; India's First Unified Health Care
+        Software</h1>
+    </div>
 
     <!-- options inside footer - Know-us, services, connect, contact-us -->
 
@@ -532,22 +534,22 @@
         <ul style="max-width: 400px;">
 
           <li style="display: flex; align-items: center;">
-            <div> <abbr title="Location"><img src="images/location icon.png" alt="Location"
+            <div> <abbr title="Location"><img src="images/location icon.png" alt=""
                   style="width:3.5vw; margin-right: 1.5vw;"> </abbr></div>
-            <div style="font-size: 1.2vw;"> <a href=" #"><abbr
+            <div style="font-size: 1.2vw;"> <a href="https://goo.gl/maps/Y2Eoynbw8ZAyd8NJ6"><abbr
                   title="XYZ ABC Technology Business Incubation Utter Pradesh India">4th Floor TBI,
                   KIET Group of Institutions <br>Ghaziabad Delhi NCR <br>201206</abbr></a></div>
           </li>
 
           <li style="display: flex; align-items: center;">
-            <div><abbr title="Mail"><img src="images/gmail.svg" alt="Mail" style="width:3.5vw; margin-right: 1.5vw;">
+            <div><abbr title="Mail"><img src="images/gmail.svg" alt="" style="width:3.5vw; margin-right: 1.5vw;">
               </abbr></div>
             <div style="font-size: 1.2vw;"><a href="mailto:official.ambuvians@gmail.com"> <abbr
                   title="official.ambuvians@gmail.com">official.ambuvians@gmail.com</abbr> </a> </div>
           </li>
 
           <li style="display: flex; align-items: center; margin-bottom: 1vw;">
-            <div><abbr title="Phone No."><img src="images/phone-volume-solid.svg" alt="Call"
+            <div><abbr title="Phone No."><img src="images/phone-volume-solid.svg" alt=""
                   style="width:3.5vw; margin-right: 1.5vw;"> </abbr></div>
             <div style="font-size: 1.2vw;">
               <a href=" tel:+917505853812"> <abbr title="7505853812">7505853812<br></abbr> </a>
@@ -562,66 +564,65 @@
 
     <!-- social Media footer -->
 
-    <div style="margin-top: 0">
-      <div style="display: flex; justify-content: center; font-size: 2.5vh; font-weight: bold;">
-        <p style="margin: 0;">Connect With US</p>
-      </div>
+    <!-- Connect Us Section -->
 
-      <div style="display: flex; justify-content: center; gap: 1vw; ">
-        <a href="#">
-          <abbr title="Instagram">
-            <img src="images/instagram.svg" alt="Instagram" class="social-contact box-1">
-          </abbr>
-        </a>
-        <a href="#">
-          <abbr title="Whatsapp">
-            <img src="images/whatsapp.png" alt="Whatsapp" class="social-contact box-1">
-          </abbr>
-        </a>
-        <a href="#">
-          <abbr title="Twitter">
-            <img src="images/devicon_twitter.png" alt="X" class="social-contact box-1">
-          </abbr>
-        </a>
-        <a href="#">
-          <abbr title="Linkedin">
-            <img src="images/logos_linkedin-icon.png" alt="Linkedin" class="social-contact box-1">
-          </abbr>
-        </a>
+    <div class="connect">
+
+      <p>Connect With Us</p>
+
+      <div class="icons">
+
+        <!-- our instagram handle -->
+        <abbr title="instagram" class="first-icon">
+          <a href="https://www.instagram.com/official.ambuvians/" target="_blank"><img
+              src="images/Footer-images/instagram.png" alt="" /></a>
+        </abbr>
+
+        <!-- our whatsapp handle-->
+        <abbr title="whatsapp" class="second-icon">
+          <a href="https://wa.me/+7505853812" target="_blank"><img src="images/Footer-images/whatsapp.png" alt="" /></a>
+        </abbr>
+
+        <!-- our twitter handle -->
+        <abbr title="twitter" class="third-icon">
+          <a href="#"><img src="images/Footer-images/twitter.png" alt="" /></a>
+        </abbr>
+
+        <!-- our linkedin handle -->
+        <abbr title="linkedin" class="fourth-icon">
+          <a href="https://www.linkedin.com/company/ambuvians-healthcare-pvt-ltd/?viewAsMember=true"
+            target="_blank"><img src="images/Footer-images/linkedin.png" alt="" /></a>
+        </abbr>
+
       </div>
     </div>
 
-    <!-- Download button -->
+    <!-- Download section -->
 
-    <div class="apk">
-      <abbr title="Download Now !">
-        <button>
-          <div>
-            <img src="images/apple.svg" alt="App Store" style="width: 3.5vh;">
-          </div>
-          <div>
-            <p style="padding: 0; margin: 0; font-size: 1.2vh;"> Download On The <br> <span>App Store</span>
-            </p>
-          </div>
-        </button>
-      </abbr>
-      <abbr title="Download Now !">
-        <button>
-          <div>
-            <img src="images/play-store.svg" alt="Play Store" style="width: 3.75vh;">
-          </div>
-          <div>
-            <p style="padding: 0; margin: 0; font-size: 1.2vh;"> Get It On <br> <span>Google play</span></p>
-          </div>
-        </button>
-      </abbr>
+    <div class="download">
+
+      <!-- download our app from appstore -->
+      <div class="appstore">
+        <abbr title="app-store">
+          <img src="images/Footer-images/app-store.jpg" alt="" />
+        </abbr>
+      </div>
+
+      <!-- download our app from playstore -->
+      <div class="playstore">
+        <abbr title="play-store">
+          <img src="images/Footer-images/play-store.png" alt="" />
+        </abbr>
+      </div>
+
     </div>
+
 
     <!-- copyright -->
 
     <div>
       <p style="margin-left: 1vw;" class="copy"> <a href="#" style="color: white;"><abbr title="Click to Know More">
-            copyright@2023 AMBU organization </abbr></a> </p>
+            copyright@2023 AMBUvians organization </abbr></a> </p>
     </div>
 
   </div>
@@ -648,6 +649,7 @@
 
     </div>
   </div>
+
 
 
 

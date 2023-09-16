@@ -67,14 +67,14 @@ header {
     align-content: center;
     align-items: center;
     background-color: white;
-    box-shadow: 0px 1px 2px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     gap: 2vw;
-    height: 4vw;
-    padding: 0 2% 0 0.5%;
+    height: 5vw;
+    padding: 0.5rem 3rem;
     position: fixed;
     top: 0;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     transition: 0.3s;
     width: 100vw;
     z-index: 10;
@@ -93,9 +93,12 @@ header {
 .right-header {
     align-items: center;
     display: flex;
-    flex: 2;
     justify-content: space-between;
-    margin-right: 1vw;
+    margin-right: 0.5vw;
+}
+
+.laptop-links {
+    margin-right: 6vw;
 }
 
 .links {
@@ -184,7 +187,8 @@ header {
 .dropdown_menu.open {
     backdrop-filter: blur(5px);
     background: rgba(0, 0, 0, 0.6);
-    background-color: #2c2e71;
+    background-color: #2c2e71a3;
+
     height: fit-content;
 }
 
@@ -646,20 +650,21 @@ main {
     position: relative;
     /* overflow: hidden; */
     width: 100%;
-    height: 24vw;
+    height: 28vw;
 
     border: 0px solid #343cff;
     /* side bars effect */
     box-shadow: 7px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-.quote video {
+.quote .video {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 25vw;
     position: absolute;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .text-box {
@@ -667,7 +672,8 @@ main {
     font-family: "Kaisei Decol", Calibri, serif;
 
     width: 100%;
-    height: 101%;
+    height: 25vw;
+
     padding: 2vw 0.5vw;
     top: 0;
     left: 0;
@@ -687,8 +693,12 @@ main {
     background: #000;
     mix-blend-mode: multiply; */
 }
+.abc {
+    width: 100%;
+}
 
 .customer-support-div {
+    margin-top: 2vh;
     background-image: url("./images/CUSTOMER SUPPORT BACKGROUND.png"); /* The image used */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -732,14 +742,14 @@ main {
 
 @media (min-width: 1281px) {
     .how-it-works-img {
-        height: 20vw;
+        height: 19vw;
         width: auto;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     .arrow {
-        width: 13.3vw;
+        width: 13vw;
     }
 
     .how-it-works-img {
@@ -760,6 +770,27 @@ main {
     }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .how-it-works-img {
+        width: 16vw;
+    }
+    .arrow {
+        width: 13vw;
+    }
+    .customer-support-figcaption {
+        font-size: 2vw;
+    }
+    .underline {
+        background-size: 30% 5px;
+    }
+    .down-arrow {
+        height: 10vw;
+        left: 87%;
+        rotate: -25deg;
+
+        top: 47%;
+    }
+}
 /* 
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = B/w 481px to 767px
@@ -836,6 +867,12 @@ main {
     margin-bottom: -15px;
 }
 
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h2 {
     font-size: 2vw;
 }
@@ -869,7 +906,7 @@ ul {
     position: absolute;
     padding: 2vw 3vw;
     border-radius: 1vw;
-    bottom: 1%;
+    bottom: 2%;
     left: 35%;
     width: 30vw;
     height: 32vw;
@@ -1012,7 +1049,6 @@ a {
 }
 
 .footer a:after {
-    background-color: #535759;
     bottom: 0;
     content: "";
     height: 2px;
@@ -1028,11 +1064,6 @@ a {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
 
 @media (min-width: 1025px) {
     .form-item input,
@@ -1110,6 +1141,178 @@ a {
     .submit {
         font-size: 1.3vw;
         margin-top: 2vw;
+    }
+}
+
+/* to remove up and down arrow in input tag */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    appearance: textfield; /* Standard */
+    -webkit-appearance: textfield; /* For compatibility with older WebKit browsers */
+    -moz-appearance: textfield; /* For compatibility with older Firefox browsers */
+}
+
+/* download from appstore and playstore*/
+
+.download {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.download img {
+    margin-right: 0px;
+}
+
+.download .appstore img {
+    height: auto;
+    width: 200px;
+}
+
+.download .playstore {
+    margin-top: 63px;
+}
+.download .playstore img {
+    height: 65px;
+    width: 180px;
+}
+
+/* copy right section*/
+
+.copyright {
+    color: white;
+    font-size: 1vw;
+    padding: 5px;
+}
+
+.contact-us img:hover {
+    cursor: pointer;
+}
+
+.connect img:hover {
+    cursor: pointer;
+    scale: 1.3;
+    transition: 0.6s;
+}
+
+.download img:hover {
+    cursor: pointer;
+}
+
+/* different ViewPorts media queries */
+
+/* media query for the footer section */
+
+/* for mobile */
+
+@media only screen and (max-width: 600px) {
+    /* connect from us section */
+
+    .connect p {
+        color: white;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .connect .icons {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .connect img {
+        height: auto;
+        width: 25px;
+    }
+
+    /* download our app section */
+
+    .download .appstore img {
+        border-radius: 5px;
+        height: 38px;
+        margin-right: 10px;
+        margin-top: 7px;
+        width: 120px;
+    }
+
+    .download .playstore {
+        margin-top: 0px;
+    }
+
+    .download .playstore img {
+        border-radius: 4px;
+        height: 46px;
+        width: 125px;
+    }
+}
+
+/* for desktop */
+
+@media (min-width: 601px) {
+    /* connect us section */
+
+    .connect p {
+        color: white;
+        font-size: 1.4em;
+        letter-spacing: 2px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .connect .icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .connect img {
+        height: auto;
+        width: 30px;
+    }
+
+    .connect .first-icon {
+        margin: 0px 40px;
+    }
+
+    .connect .second-icon {
+        margin: 0px 40px;
+    }
+
+    .connect .third-icon {
+        margin: 0px 40px;
+    }
+
+    .connect .fourth-icon {
+        margin: 0px 40px;
+    }
+
+    /* download section */
+
+    .download .appstore img {
+        border-radius: 5px;
+        height: 38px;
+        margin-right: 10px;
+        margin-top: 7px;
+        width: 120px;
+    }
+
+    .download .playstore {
+        margin-top: 0px;
+    }
+
+    .download .playstore img {
+        border-radius: 4px;
+        height: 46px;
+        width: 125px;
     }
 }
 

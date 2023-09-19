@@ -745,6 +745,16 @@ main {
     .down-arrow {
         height: 4vw;
     }
+
+    .arrow {
+        width: 9.75vw;
+    }
+    .down-arrow {
+        height: 4vw;
+        left: 90%;
+        rotate: -15deg;
+        top: 58%;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
